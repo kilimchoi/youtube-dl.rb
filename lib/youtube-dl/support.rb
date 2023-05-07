@@ -26,7 +26,7 @@ module YoutubeDL
     # @return [Terrapin::CommandLine] initialized Terrapin instance
     def line(command, executable_path = nil)
       executable_path = executable_path_for('youtube-dl') if executable_path.nil?
-      Terapin::CommandLine.new(executable_path, command)
+      Terrapin::CommandLine.new(executable_path, command)
     end
 
     # Helper to add quotes to beginning and end of a URL or whatever you want....
